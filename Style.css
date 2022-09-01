@@ -27,3 +27,28 @@ html{
     font-family: "DM Sans", sans-serif;
     /* 'Inter', sans-serif; */
 }
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: 34.4rem;
+    text-align: center;
+}
+header img{
+    width: 150px;
+    height: 24px;
+    margin-top: 6rem;
+    /* align-self: center; sirve para poder centrar a un elemento que tenga un contenedor con display flex */
+}
+.header__title-container{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 20.8rem;
+    margin-top: 5rem;
+}
