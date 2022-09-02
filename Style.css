@@ -38,6 +38,7 @@ header{
     min-width: 320px;
     height: 34.4rem;
     text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
 }
 header img{
     width: 150px;
@@ -51,4 +52,43 @@ header img{
     max-width: 900px;
     height: 20.8rem;
     margin-top: 5rem;
+}
+.header__title-container h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem; /*la altura de la fuente entre lineas se modifica con esta linea */
+    color: var(--just-white);
+}
+.header__title-container p{
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+.header__title-container .header__button{
+    position: absolute;
+    left: calc(50% - 115px);
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--off-white);
+    /* sombra */
+    box-shadow: 0px 4px 8px rgba(89,73,30,0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+.header__button span{
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('https://i.ibb.co/SKfRCgr/down-arrow.png');
 }
