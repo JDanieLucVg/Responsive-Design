@@ -38,6 +38,7 @@ header{
     min-width: 320px;
     height: 34.4rem;
     text-align: center;
+    background-color: #1a9af7;
 }
 header img{
     width: 150px;
@@ -51,4 +52,48 @@ header img{
     max-width: 900px;
     height: 20.8rem;
     margin-top: 5rem;
+}
+/* main */
+main{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    background-color: var(--off-white);
+}
+.main__exchange-container{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.main__exchange-container .backgraundImg{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto; /*centrar el contenedor */
+    margin-bottom: 50px;
+    background-image: url('https://i.ibb.co/VLc350F/Bitcoin.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main__exchange-container_title{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.main__exchange-container h2{
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+.main__exchange-container p{
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575;
 }
