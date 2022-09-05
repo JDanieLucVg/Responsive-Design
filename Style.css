@@ -67,13 +67,12 @@ header img{
     line-height: 1.8rem;
     margin-top: 32px;
 }
-
 .header__title-container .header__button {
     position: absolute;
-    left: calc(50% - 114.5px);
+    left: calc(50% - 115px);
     top: 270px;
     display: block;
-    margin-top: 35px;
+    margin-top: 50px;
     padding: 15px;
     width: 229px;
     height: 48px;
