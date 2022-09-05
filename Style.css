@@ -97,6 +97,7 @@ main{
     line-height: 1.6rem;
     color: #757575;
 }
+
 .main__currency__table{
     width: 70%;
     min-width: 235px;
@@ -131,4 +132,92 @@ main{
     line-height: 1.9rem;
     color: var(--grey);
     background-color: var(--just-white);
+}
+.currency__table__container .table__top-lef{
+    border-radius: 15px 0 0 0;
+}
+.currency__table__container .table__top-rigth{
+    border-radius: 0 15px 0 0;
+}
+.currency__table__container .table__bottom-left{
+    border-radius: 0 0 0 15px;
+}
+.currency__table__container .table__bottom-rigth{
+    border-radius: 0 0 15px 0;
+}
+.currency__table__container .table--rigth{
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
+    text-align: center;
+}
+.currency__table__container .down{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url('https://i.ibb.co/qsc9R2G/trending-down.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.currency__table__container .up{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url('https://i.ibb.co/9Wt1n2C/trending-up.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.currency-table--date{
+    width: max-content;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 8px;
+    background-color: var(--soft-orange);
+    border-radius: 8px;
+}
+.currency-table--date p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    color: var(--warm-black);
+}
+/* segunda tabla */
+.main__commision__table{
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+}
+.main__commision__table .commision__table--title{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    margin-top: 10px;
+    color: var(--secondary-blue);
+    font-family: "DM Sans", sans-serif;
+}
+
+.commision-table--date{
+    width: max-content;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 8px;
+    background-color: var(--soft-blue);
+    border-radius: 8px;
+}
+.commision-table--date p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    color: var(--warm-black);
 }
