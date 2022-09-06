@@ -52,3 +52,51 @@ header img{
     height: 20.8rem;
     margin-top: 5rem;
 }
+/* seccion de beneficios */
+.main__product__detail{
+    position: relative; 
+    /* esl position relative permite que podamos colocar el elemento de la patata de forma flotante(absolute) ya que va a buscar a su elemento padre que es relative */
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--warm-black);
+}
+/* logotipo papa */
+.product-detail__patata__logo{
+    position: absolute;
+    top: -10px;
+    left: calc(50% - 20px);
+    width: 4rem;
+    height: 2.5rem;
+    background-image: url('https://i.ibb.co/4tL16BQ/batata.png');
+}
+/* left(atributo): Alinea un elemento con referencia al lado izquierdo de nuestro contenedor.
+
+calc()(función): Nos permite realizar cálculos para determinar valores de propiedades CSS.
+
+50%(parámetro): Representa la mitad del ancho del contenedor(para 320px, el 50% serían = 160px), lo cual alineará nuestro elemento 160px de izquierda(left) a derecha.
+
+20px: Representan la mitad del ancho(width) de nuestro elemento, esto se hace con la finalidad de poder posicionarlo en el centro de nuestro contenedor. */
+.product-detail__title{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+.product-detail__title h2{
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--off-white);
+}
+.product-detail__title p{
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
