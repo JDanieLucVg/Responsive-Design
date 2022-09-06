@@ -315,7 +315,8 @@ calc()(función): Nos permite realizar cálculos para determinar valores de prop
     width: 90%;
     min-width: 288px;
     max-width: 450px;
-    height: 15rem;
+    min-height: 15rem;
+    /* al solo poner un heigth estamos limitando la altura pero al poner el min-heigtht estamos diciendole que la tarjeta crezca conforme al contenido y solo delimitando el minimo de la altura */
     margin: 15px auto;
     padding: 1.5rem;
     background-color: var(--black);
