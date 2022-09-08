@@ -101,6 +101,7 @@ main{
     height: auto;
     background-color: #E5E5E5;
 }
+/* creacion de seccion de tablas */
 .main__exchange-container{
     width: 100%;
     height: auto;
@@ -138,7 +139,17 @@ main{
     line-height: 1.6rem;
     color: #757575;
 }
-
+/* creacion de scroll de tablas  */
+.main__tables_container{
+    display: flex; /*Esto hace que los elementos hijos se acomoden uno a lado del otro, generando un scroll*/
+    align-items: baseline;
+    gap: 70px; /*Esto hace que los elementos hijos se separen*/
+    height: 380px;
+    overflow-x: scroll;/*Con esta propiedad hacemos que el comportamiento del contenedor contenga sus elementos haciendo que el scroll solo afecte al contenedor  */
+    overscroll-behavior-x: contain;/*Establece lo que hace un navegador cuando alcanza el límite de un área de desplazamiento*/
+    scroll-snap-type: x proximity;
+}
+/* estilos de las tablas */
 .main__currency__table{
     width: 70%;
     min-width: 235px;
@@ -236,6 +247,7 @@ main{
     height: 360px;
     margin: 0 auto;
     font-family: 'Inter', sans-serif;
+    scroll-snap-type: center;
 }
 .main__commision__table .commision__table--title{
     margin-bottom: 15px;
@@ -387,6 +399,23 @@ calc()(función): Nos permite realizar cálculos para determinar valores de prop
     padding-bottom: 70px;
     text-align: center;
 }
+/* creacion del scroll  */
+.plans-container--slider{
+    display: flex; /*Esto hace que los elementos hijos se acomoden uno a lado del otro, generando un scroll*/
+    gap: 20px; /*Esto hace que los elementos hijos se separen*/
+    height: 316px;
+    overflow-x: scroll;/*Con esta propiedad hacemos que el comportamiento del contenedor contenga sus elementos haciendo que el scroll solo afecte al contenedor  */
+    overscroll-behavior-x: contain;/*Establece lo que hace un navegador cuando alcanza el límite de un área de desplazamiento*/
+    scroll-snap-type: x proximity;
+}
+/* agregar decoracion al scroll */
+.plans-container--slider::-webkit-scrollbar {
+    background-color: var(--soft-orange);
+    height: 3px;
+}
+.plans-container--slider::-webkit-scrollbar-thumb {
+    background-color: var(--bitcoin-orange);
+}
 /* seccion del titulo y parrafo */
 .plans__title{
     width: 90%;
@@ -414,6 +443,9 @@ calc()(función): Nos permite realizar cálculos para determinar valores de prop
 /* estilos de las tarjetas */
 .plans-container__card{
     position: relative;
+    scroll-snap-align: center;
+    /*cuando hagas scroll te lleve al centro del elemento
+    También le agregamos una regla a los elementos hijos para darle un efecto al deplazmiento, el navegador nos ayuda a centrar el elemento al hacer scroll*/
     width: 70%;
     min-width: 230px;
     max-width: 300px;
