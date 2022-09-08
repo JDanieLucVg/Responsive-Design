@@ -402,7 +402,7 @@ calc()(función): Nos permite realizar cálculos para determinar valores de prop
 /* creacion del scroll  */
 .plans-container--slider{
     display: flex; /*Esto hace que los elementos hijos se acomoden uno a lado del otro, generando un scroll*/
-    gap: 20px; /*Esto hace que los elementos hijos se separen*/
+    gap: 10px; /*Esto hace que los elementos hijos se separen*/
     height: 316px;
     overflow-x: scroll;/*Con esta propiedad hacemos que el comportamiento del contenedor contenga sus elementos haciendo que el scroll solo afecte al contenedor  */
     overscroll-behavior-x: contain;/*Establece lo que hace un navegador cuando alcanza el límite de un área de desplazamiento*/
@@ -447,7 +447,7 @@ calc()(función): Nos permite realizar cálculos para determinar valores de prop
     /*cuando hagas scroll te lleve al centro del elemento
     También le agregamos una regla a los elementos hijos para darle un efecto al deplazmiento, el navegador nos ayuda a centrar el elemento al hacer scroll*/
     width: 70%;
-    min-width: 230px;
+    min-width: 190px;
     max-width: 300px;
     height: 250px;
     margin: 50px auto 0px;
@@ -521,4 +521,30 @@ calc()(función): Nos permite realizar cálculos para determinar valores de prop
     height: 20px;
     background-image: url('https://i.ibb.co/YjjM6Dp/orange-right-arrow.png');
     vertical-align: text-bottom;
+}
+/* creacion de estilos del footer */
+footer{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+footer section{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+footer .left-container ul{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+.left-container li{
+    margin: 10px 0;
+}
+.left-container a{
+    text-decoration: none;
+    color: var(--just-white);
 }
